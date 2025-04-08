@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar bg-body-dark fixed-top" data-bs-spy="scroll" data-bs-target="offcanvasNavbarLabel">
+    <nav id="nav-section" class="navbar bg-body-dark fixed-top" data-bs-spy="scroll" data-bs-target="offcanvasNavbarLabel">
         <div class="container">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler position-absolute top-0 end-0 mt-3 me-3 text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,10 +55,10 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="details.html">Integration Page</a></li>
                     <li class="nav-item">
-                      <a class="dropdown-item" href="#scrollspyHeading2">Search</a>
+                      <a class="dropdown-item" href="#scrollspyHeading1">Search</a>
                     </li>
                     <li class="nav-item">
-                      <a class="dropdown-item" href="#scrollspyHeading1">Details</a>
+                      <a class="dropdown-item" href="#scrollspyHeading2">Details</a>
                     </li>
                   </ul>
               </ul>
@@ -66,14 +66,22 @@
           </div>
         </div>
       </nav>
-      <section class="container-fluid text-center">
-          <form class=" row g-3" action="search" method="get">
+      <section data-bs-spy="scroll" data-bs-target="nav-section" data-bs-root-margin="10px 10px -40%" data-bs-smooth-scroll="true"class="container-fluid text-center scrollspy-example" tabindex="0">
+        <form class=" row g-3">
             <div class="col-12 mb-5">
                 <h1 class="search-heading text-center">Search A Pokemon</h1>
             </div>
             <div id="scrollspyHeading1" class="col-lg-4 col-sm-12 position-relative top-50 start-50 translate-middle">
                 <input id="pokeInput" class="form-control mx-auto p-2 mb-3" style="width: 25rem;" placeholder="Enter a Pokemon name" type="text">
-                <button id="pokeBtn" class="btn btn-dark" type="submit">SEARCH</button>
+                <button id="pokeBtn" onclick="showPokemon()" class="btn btn-dark" type="submit">SEARCH</button>
+            </div>
+        </form>
+        <form class="row g-3">
+            <div class="col-12 mb-5">
+                <h1 class="search-heading text-center">Pokemon Details</h1>
+            </div>
+            <div id="scrollspyHeading2" class="col-lg-4 col-sm-12 position-relative top-50 start-50 translate-middle">
+                <div id="pokeDisplay"></div>
             </div>
         </form>
       </section>
