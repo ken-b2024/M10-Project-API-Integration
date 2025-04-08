@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>Pokemon - Home</title>
+    <style>
+      header h1 {
+        margin-top: 35%;
+        font-size: 64pt;
+        font-weight: bolder;
+        font-family: cursive;
+        color: yellow;
+        animation: fadeIn 3s ease-in-out;
+      }
+      @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 2; transform: translateY(0px); }
+        }
+      body {
+          background-image: url(https://images.unsplash.com/photo-1628968434441-d9c1c66dcde7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+          background-size: 100%;
+      }
+      nav {
+          font-size: 26pt;
+          font-style: oblique;
+          font-weight: bolder;
+          font-family: cursive;
+      }
+      .navbar .nav-link,
+      .navbar .navbar-brand,
+      .offcanvas-title {
+          color: aliceblue !important;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <header class="container">
+        <div class="jumbotron text-center text-bg-dark">
+            <h1 class="mb-5">Welcome to the Pokemon API Integration Site!</h1>
+        </div>
+    </header>
+</section>
+    <nav class="navbar bg-body-dark fixed-top" data-bs-spy="scroll" data-bs-target="offcanvasNavbarLabel">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler position-absolute top-0 end-0 mt-3 me-3 text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-body-sm offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 36pt;">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    API Integration
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="details.html">Integration Page</a></li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#scrollspyHeading2">Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#scrollspyHeading1">Details</a>
+                    </li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+</body>
+</html>

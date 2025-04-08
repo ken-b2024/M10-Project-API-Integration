@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>Pokemon - Search and Details</title>
+    <style>
+        nav {
+          font-size: 26pt;
+          font-style: oblique;
+          font-weight: bolder;
+          font-family: cursive;
+        }
+        .navbar .nav-link,
+        .navbar .navbar-brand,
+        .offcanvas-title {
+          color: aliceblue !important;
+        }
+        body {
+            background-color: purple;
+        }
+        .search-heading {
+            margin-top: 30rem;
+            font-size: 45pt;
+            font-weight: 900;
+            color: yellow;
+            text-shadow: 10px darkblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-dark fixed-top" data-bs-spy="scroll" data-bs-target="offcanvasNavbarLabel">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler position-absolute top-0 end-0 mt-3 me-3 text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-body-sm offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 36pt;">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    API Integration
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="details.html">Integration Page</a></li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#scrollspyHeading2">Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#scrollspyHeading1">Details</a>
+                    </li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid text-center">
+          <form class=" row g-3" action="search" method="get">
+            <div class="col-12 mb-5">
+                <h1 class="search-heading text-center">Search A Pokemon</h1>
+            </div>
+            <div id="scrollspyHeading1" class="col-lg-4 col-sm-12 position-relative top-50 start-50 translate-middle">
+                <input id="pokeInput" class="form-control mx-auto p-2 mb-3" style="width: 25rem;" placeholder="Enter a Pokemon name" type="text">
+                <button id="pokeBtn" class="btn btn-dark" type="submit">SEARCH</button>
+            </div>
+        </form>
+      </section>
+</body>
+</html>
