@@ -17,10 +17,10 @@ function showPokemon(pokemon) {
     
     pokeCard.innerHTML = `
         <img class = 'pokemon-display' src = "${pokemon.sprites.front_default}">
-        <h2>${pokemon.name}</h2>
-        <p class='fs-3'>Abilities: ${pokemon.abilities.map(ability => ability.ability.name).join(',')}</p>
-        <p class='fs-3'>Stats: ${pokemon.stats.map(stats => stats.stat.name).join(',')}</p>
-        <p class='fs-3'>Types: ${pokemon.types.map(types => types.type.name).join(',')}</p>
+        <h2 class='text-uppercase'><strong>${pokemon.name}</strong></h2>
+        <p class='fs-3 display-text'>Abilities: ${pokemon.abilities.map(ability => ability.ability.name).join(',')}</p>
+        <p class='fs-3 display-text'>Stats: ${pokemon.stats.map(stats => stats.stat.name).join(',')}</p>
+        <p class='fs-3 display-text'>Types: ${pokemon.types.map(types => types.type.name).join(',')}</p>
     `;
     container.appendChild(pokeCard)
     console.log(container)
