@@ -4,7 +4,6 @@ async function fetchPokemon(pokeName) {
     try {
         const res = await fetch(apiUrl)
         const data = await res.json()
-        console.log(data)
         return (data)
     }catch(err) {
         console.log(err)
