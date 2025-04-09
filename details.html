@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <title>Pokemon - Search and Details</title>
+    <script src="main.js"></script>
     <style>
         nav {
           font-size: 26pt;
@@ -28,7 +29,11 @@
             color: yellow;
             text-shadow: 10px darkblue;
         }
-        
+        .pokemon-display {
+            margin-top: 30rem;
+            width: 20rem;
+            background-color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +78,7 @@
             </div>
             <div id="scrollspyHeading1" class="col-lg-4 col-sm-12 position-relative top-50 start-50 translate-middle">
                 <input id="pokeInput" class="form-control mx-auto p-2 mb-3" style="width: 25rem;" placeholder="Enter a Pokemon name" type="text">
-                <button id="pokeBtn" onclick="showPokemon()" class="btn btn-dark" type="submit">SEARCH</button>
+                <button id="pokeBtn"  class="btn btn-dark" type="submit">SEARCH</button>
             </div>
         </form>
         <form class="row g-3">
