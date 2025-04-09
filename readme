@@ -1,0 +1,96 @@
+🔍 Pokémon Search and Details Web App
+
+This is a simple and interactive web application that allows users to search for Pokémon by name and view their abilities, types, and base stats using the PokeAPI.
+
+🌐 Live Demo
+
+lumecity.net (Make sure your files are deployed in public_html and named index.html!)
+
+📁 Project Structure
+
+public_html/
+├── index.html         # Main HTML file
+├── main.js            # JavaScript with API integration
+├── style.css          # (optional if separated from <style> tag)
+
+✨ Features
+
+Responsive design using Bootstrap 5.3
+
+Offcanvas navigation menu
+
+Smooth scrolling with scrollspy
+
+Search any Pokémon by name
+
+Display Pokémon:
+
+Image (front default)
+
+Abilities
+
+Base stats
+
+Types
+
+Error handling for invalid or empty input
+
+🚀 Technologies Used
+
+HTML5
+
+CSS3 + inline styles
+
+JavaScript (ES6+)
+
+Bootstrap 5.3
+
+PokeAPI – https://pokeapi.co/
+
+🔧 How It Works
+
+User enters a Pokémon name in the search input.
+
+Clicking "SEARCH" triggers an API call to:
+
+https://pokeapi.co/api/v2/pokemon/{pokemonName}
+
+The app receives a JSON response with Pokémon data.
+
+A styled card is dynamically created and injected into the page displaying:
+
+Name
+
+Image
+
+Abilities
+
+Stats
+
+Types
+
+🧪 Example Pokémon
+
+Try searching for:
+
+pikachu
+
+bulbasaur
+
+charizard
+
+mewtwo
+
+🛠️ How to Use / Deploy
+
+Upload all files to your hosting provider’s public_html folder
+
+Make sure your main file is named index.html
+
+Visit your domain in a browser (e.g., lumecity.net)
+
+Start searching!
+
+📄 License
+
+This project is open for use and educational purposes. No affiliation with Nintendo or The Pokémon Company.
